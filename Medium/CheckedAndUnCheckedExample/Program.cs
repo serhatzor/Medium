@@ -24,11 +24,12 @@
                 maxValueOfInt = Int32.MaxValue;
                 maxValueOfInt++;
             }
+
         }
 
         public static void PrintBigNumber()
         {
-            int maxValueOfInt = Int32.MaxValue;
+            int maxValueOfInt = unchecked(Int32.MaxValue + 1);
             Console.WriteLine(maxValueOfInt);
             maxValueOfInt = maxValueOfInt + 1;
             Console.WriteLine(maxValueOfInt);
