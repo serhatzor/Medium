@@ -20,6 +20,7 @@
 
         static ReadonlyVsConst()
         {
+            _staticEntity = new DemoEntity() { Id = 25 };
         }
     }
 
