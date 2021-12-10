@@ -15,6 +15,7 @@ namespace CheckedAndUnCheckedExample
 
             foreach (Car car in cars)
             {
+
                 Console.WriteLine($"{car.Id} -> {car.Name}");
             }
 
