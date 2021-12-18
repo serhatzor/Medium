@@ -7,6 +7,9 @@ namespace CheckedAndUnCheckedExample
     {
         public static void Main()
         {
+            Car first;
+            Car second;
+
             Cars cars = new Cars();
             cars.CarList.Add(new Car() { Brand = "BMW", Id = 1, Model = "520", Name = "BMW 520" });
             cars.CarList.Add(new Car() { Brand = "Opel", Id = 2, Model = "Astra", Name = "Opel Astra" });

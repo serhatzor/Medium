@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReadonlyVsConstExample", "R
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IEnumeratorAndIEnumerableExample", "IEnumeratorAndIEnumerableExample\IEnumeratorAndIEnumerableExample.csproj", "{C1FAAC7E-280A-4A4D-8737-ADB5AC1D6B9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YieldExample", "YieldExample\YieldExample.csproj", "{D6FF2DDE-E878-4B63-8B1F-47C01D440AFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YieldExample", "YieldExample\YieldExample.csproj", "{D6FF2DDE-E878-4B63-8B1F-47C01D440AFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IComparableExample", "IComparableExample\IComparableExample.csproj", "{9B979E95-7B3C-463E-ADD8-54F7249D3AA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D6FF2DDE-E878-4B63-8B1F-47C01D440AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6FF2DDE-E878-4B63-8B1F-47C01D440AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6FF2DDE-E878-4B63-8B1F-47C01D440AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B979E95-7B3C-463E-ADD8-54F7249D3AA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B979E95-7B3C-463E-ADD8-54F7249D3AA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B979E95-7B3C-463E-ADD8-54F7249D3AA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B979E95-7B3C-463E-ADD8-54F7249D3AA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
