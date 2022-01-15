@@ -6,9 +6,15 @@ namespace ActionFuncEventDelegateExample
         public static void Main()
         {
             //DelegateSample.RunDelegateExample();
-            EventSample.RunEventExample();
-            EventSample.SimulateMemoryLeak();
-            EventSample.SimulateCustomAccessors();
+            //EventSample.RunEventExample();
+            //EventSample.SimulateMemoryLeak();
+            //EventSample.SimulateCustomAccessors();
+            //ActionFuncSample.RunActionSample();
+            //ActionFuncSample.RunFuncSample();
+            //ActionFuncSample.RunArrowFunction();
+            //ActionFuncSample.RunClosureExample();
+            //ActionFuncSample.RunScopedParamExample();
+            ActionFuncSample.RunForTrapSample();
         }
     }
 }
