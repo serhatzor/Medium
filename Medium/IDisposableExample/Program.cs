@@ -3,13 +3,43 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        ReadUsers();
-        InsertUser();
-        ReadUsers();
-        Console.ReadLine();
+        //ReadUsersAndNotDispose();
+        //InsertUserAndNotDispose();
+        //Console.ReadLine();
+
+        ReadUsersAndDispose();
+        Console.WriteLine("*****");
+        InserUserAndDispose();
+        ReadUsersAndDispose();
+        Console.WriteLine("*****");
+        InserUserAndDispose();
+        ReadUsersAndDispose();
+        Console.WriteLine("*****");
     }
 
-    public static void ReadUsers()
+    public static void ReadUsersAndDispose()
+    {
+        using (UserProcessor userProcessor = new UserProcessor())
+        {
+            userProcessor.OpenUserProcessor(false);
+
+            string users = userProcessor.ReadUsers();
+
+            Console.WriteLine($"Content{Environment.NewLine}{users}");
+        }
+    }
+
+    public static void InserUserAndDispose()
+    {
+        using (UserProcessor userProcessor = new UserProcessor())
+        {
+            userProcessor.OpenUserProcessor(true);
+
+            userProcessor.InsertUser("testuser4");
+        }
+    }
+
+    public static void ReadUsersAndNotDispose()
     {
         UserProcessor userProcessor = new UserProcessor();
 
@@ -20,7 +50,7 @@ public class Program
         Console.WriteLine($"Content{Environment.NewLine}{users}");
     }
 
-    public static void InsertUser()
+    public static void InsertUserAndNotDispose()
     {
         UserProcessor userProcessor = new UserProcessor();
 
@@ -28,4 +58,6 @@ public class Program
 
         userProcessor.InsertUser("testuser4");
     }
+
+
 }

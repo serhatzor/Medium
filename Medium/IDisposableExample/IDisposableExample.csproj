@@ -8,7 +8,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Update="users.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 

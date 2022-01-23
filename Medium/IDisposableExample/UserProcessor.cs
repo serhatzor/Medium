@@ -3,7 +3,7 @@ using System.Text;
 
 namespace IDisposableExample
 {
-    public class UserProcessor
+    public class UserProcessor : IDisposable
     {
         private FileStream _fileStream;
         private readonly string _path;
@@ -25,13 +25,14 @@ namespace IDisposableExample
 
         public void InsertUser(string user)
         {
-            _fileStream.Write(Encoding.UTF8.GetBytes(user));
+            _fileStream.Write(Encoding.UTF8.GetBytes(Environment.NewLine + user));
         }
 
-        public void DisposeUserProcessor()
+        public void Dispose()
         {
             _fileStream.Close();
             _fileStream.Dispose();
+
         }
     }
 }
