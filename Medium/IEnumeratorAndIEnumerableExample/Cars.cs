@@ -2,7 +2,7 @@
 
 namespace IEnumeratorAndIEnumerableExample
 {
-    public class Cars : IEnumerable<Car>
+    public class Cars : IEnumerable
     {
         public List<Car> CarList = new List<Car>();
 

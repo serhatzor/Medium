@@ -15,14 +15,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IComparableExample", "IComp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IQueryableExample", "IQueryableExample\IQueryableExample.csproj", "{85715F82-C56A-443F-AE77-75D901A75455}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{30AD3B95-1E59-4839-B427-057BA079D5C0}"
-	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeakReferenceExample", "WeakReferenceExample\WeakReferenceExample.csproj", "{A9CD5811-F5C3-45B5-86E1-7E751E69890F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionFuncEventDelegateExample", "ActionFuncEventDelegateExample\ActionFuncEventDelegateExample.csproj", "{8EC5FC8B-4670-4416-AD57-AAE145EAA737}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDisposableExample", "IDisposableExample\IDisposableExample.csproj", "{D06B419C-1797-490E-9644-C8948EE6A643}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,6 +62,10 @@ Global
 		{8EC5FC8B-4670-4416-AD57-AAE145EAA737}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EC5FC8B-4670-4416-AD57-AAE145EAA737}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EC5FC8B-4670-4416-AD57-AAE145EAA737}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D06B419C-1797-490E-9644-C8948EE6A643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D06B419C-1797-490E-9644-C8948EE6A643}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D06B419C-1797-490E-9644-C8948EE6A643}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D06B419C-1797-490E-9644-C8948EE6A643}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
