@@ -95,7 +95,7 @@ namespace ActionFuncEventDelegateExample
         }
 
 
-        public static void RunForAndForEachSample()
+        public static void RunForTrapSample()
         {
             List<Person> people = new List<Person>();
 
