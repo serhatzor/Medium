@@ -3,6 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31825.309
 MinimumVisualStudioVersion = 10.0.40219.1
+.editorconfig = .editorconfig
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheckedAndUnCheckedExample", "CheckedAndUnCheckedExample\CheckedAndUnCheckedExample.csproj", "{ECB03143-E545-4C56-A57F-E0C1C541B098}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReadonlyVsConstExample", "ReadonlyVsConstExample\ReadonlyVsConstExample.csproj", "{F414E893-E552-47D2-B170-376EC9D50FDE}"
@@ -15,14 +16,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IComparableExample", "IComp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IQueryableExample", "IQueryableExample\IQueryableExample.csproj", "{85715F82-C56A-443F-AE77-75D901A75455}"
 EndProject
-		.editorconfig = .editorconfig
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeakReferenceExample", "WeakReferenceExample\WeakReferenceExample.csproj", "{A9CD5811-F5C3-45B5-86E1-7E751E69890F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionFuncEventDelegateExample", "ActionFuncEventDelegateExample\ActionFuncEventDelegateExample.csproj", "{8EC5FC8B-4670-4416-AD57-AAE145EAA737}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDisposableExample", "IDisposableExample\IDisposableExample.csproj", "{D06B419C-1797-490E-9644-C8948EE6A643}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LockExample", "LockExample\LockExample.csproj", "{F6A69370-1D85-4F26-980C-F9AF56EA677D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -66,6 +66,10 @@ Global
 		{D06B419C-1797-490E-9644-C8948EE6A643}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D06B419C-1797-490E-9644-C8948EE6A643}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D06B419C-1797-490E-9644-C8948EE6A643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6A69370-1D85-4F26-980C-F9AF56EA677D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6A69370-1D85-4F26-980C-F9AF56EA677D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6A69370-1D85-4F26-980C-F9AF56EA677D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6A69370-1D85-4F26-980C-F9AF56EA677D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

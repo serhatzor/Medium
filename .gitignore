@@ -332,3 +332,8 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+*.cs-template
+*.ts-template
+*.vb-template
+Medium/.vscode/solution-explorer/template-parameters.js
+Medium/.vscode/solution-explorer/template-list.json
