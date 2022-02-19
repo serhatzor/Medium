@@ -1,5 +1,4 @@
 ﻿using System.Collections.Concurrent;
-using System.Text;
 
 namespace LockExample
 {
@@ -7,43 +6,49 @@ namespace LockExample
     {
         public static void Main()
         {
-            Task task1 = Task.Run(() =>
+            lock (_mainLock)
             {
-                RunSimpleLockExample(1);
-            });
+                Task task1 = Task.Run(() =>
+                {
+                    RunSimpleLockExample(1, true);
+                });
 
-            Task task2 = Task.Run(() =>
-            {
-                RunSimpleLockExample(2);
-            });
+                Task task2 = Task.Run(() =>
+                {
+                    RunSimpleLockExample(2, false);
+                });
 
-            Task.WaitAll(task1, task2);
-
-            var keys = _tracer.Keys.OrderBy(x => x);
-            foreach (var key in keys)
-            {
-                Console.WriteLine($"{key.ToString("HH:mm:ss,fff")} -> {_tracer[key]}");
+                Task.WaitAll(task1, task2);
             }
         }
-
+        private static object _mainLock = new Object();
         private static object _lockInstance = new object();
-        private static ConcurrentDictionary<DateTime, string> _tracer = new ConcurrentDictionary<DateTime, string>();
-        public static void RunSimpleLockExample(int caller)
+        public static void RunSimpleLockExample(int caller, bool doDeadLock)
         {
-            _tracer.TryAdd(DateTime.Now, $"{caller} is waiting to hold the lock");
+            Console.WriteLine($"{DateTime.Now.ToString("HH:mm:ss,fffff")} -> {caller} is waiting to hold the lock");
             lock (_lockInstance)
             {
-                _tracer.TryAdd(DateTime.Now, $"{caller} helded the lock");
+                Console.WriteLine($"{DateTime.Now.ToString("HH:mm:ss,fffff")} -> {caller} helded the lock");
+                if (doDeadLock)
+                {
+                    Console.WriteLine($"{DateTime.Now.ToString("HH:mm:ss,fffff")} -> {caller} is waiting to hold the main lock");
+                    lock (_mainLock)
+                    {
+
+                    }
+                }
 
                 for (int i = 0; i < 1000000; i++)
                 {
                     if (i % 100000 == 0)
                     {
-                        _tracer.TryAdd(DateTime.Now, $"{caller} is running {i} index");
+                        Console.WriteLine($"{DateTime.Now.ToString("HH:mm:ss,fffff")} -> {caller} is running {i} index");
                     }
                 }
-                _tracer.TryAdd(DateTime.Now, $"{caller} is releasing the lock");
+                Console.WriteLine($"{DateTime.Now.ToString("HH:mm:ss,fffff")} -> {caller} is releasing the lock");
             }
+            Console.WriteLine($"{DateTime.Now.ToString("HH:mm:ss,fffff")} -> {caller} released the lock");
         }
     }
 }
+
