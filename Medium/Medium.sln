@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDisposableExample", "IDisp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LockExample", "LockExample\LockExample.csproj", "{F6A69370-1D85-4F26-980C-F9AF56EA677D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCorePerformanceExample", "EFCorePerformanceExample\EFCorePerformanceExample.csproj", "{BCE59C60-2E46-4D52-A0A4-83ADF67D325F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,6 +72,10 @@ Global
 		{F6A69370-1D85-4F26-980C-F9AF56EA677D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6A69370-1D85-4F26-980C-F9AF56EA677D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6A69370-1D85-4F26-980C-F9AF56EA677D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCE59C60-2E46-4D52-A0A4-83ADF67D325F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE59C60-2E46-4D52-A0A4-83ADF67D325F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE59C60-2E46-4D52-A0A4-83ADF67D325F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE59C60-2E46-4D52-A0A4-83ADF67D325F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
